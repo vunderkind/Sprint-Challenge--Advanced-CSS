@@ -1,5 +1,7 @@
 // Mixins Here
 
+
+
 .button-mixin {
     background: @btn-bg-color;
     font-size: 1.8em;
@@ -8,6 +10,10 @@
     border-radius: 0.4em;
     color: white;
     text-align: center;
+    a {
+        text-decoration: none;
+        color:white;
+      }
 
     &:hover {
         background: lighten(@btn-bg-color,15%);

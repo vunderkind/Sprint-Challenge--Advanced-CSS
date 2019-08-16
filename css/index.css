@@ -7,6 +7,10 @@
   color: white;
   text-align: center;
 }
+.button-mixin a {
+  text-decoration: none;
+  color: white;
+}
 .button-mixin:hover {
   background: #3e496a;
 }
@@ -199,6 +203,10 @@ img {
   color: white;
   text-align: center;
 }
+.btn a {
+  text-decoration: none;
+  color: white;
+}
 .btn:hover {
   background: #3e496a;
 }
@@ -230,15 +238,23 @@ nav .links li {
   justify-content: center;
 }
 @media (max-width:500px) {
+  nav {
+    justify-content: center;
+    align-items: center;
+  }
   nav .logo {
     padding-top: 4%;
   }
   nav .links {
     font-size: 1.6em;
+    justify-content: center;
+    align-items: center;
   }
   nav .links li {
+    display: flex;
     padding: 0;
     margin: 0 2%;
+    justify-content: space-between;
   }
 }
 footer {
