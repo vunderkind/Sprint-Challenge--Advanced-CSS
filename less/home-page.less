@@ -3,6 +3,8 @@
 .home {
 
   .intro {
+    img {width:100%;
+    }
 
     h2 {
       padding: 15px;
@@ -73,3 +75,25 @@
     }
   }
 }// home
+
+@media @phone {
+  .home {
+    .space-images {
+      display:flex;
+      flex-direction: column;
+      width: 100%;
+      img.blast {
+        width: 100%;
+    }
+      img.sky {
+      display:none;
+    }
+      img.launch {
+      display:none;
+    }
+  }
+  p {
+    font-size: 2em;
+  }
+ } 
+}
