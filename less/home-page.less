@@ -3,6 +3,8 @@
 .home {
 
   .intro {
+    img {width:100%;
+    }
 
     h2 {
       padding: 15px;
@@ -56,9 +58,6 @@
       p {
         margin-bottom: 26px;
       }
-
-      .btn {
-      }
     }
 
     .walk-img {
@@ -73,3 +72,44 @@
     }
   }
 }// home
+
+@media @phone {
+  .home {
+    .space-images {
+      display:flex;
+      flex-direction: column;
+      width: 100%;
+      img.blast {
+        width: 100%;
+    }
+      img.sky {
+      display:none;
+    }
+      img.launch {
+      display:none;
+    }
+  }
+  p {
+    font-size: 2em;
+  }
+    .walk {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+    .walk-text {
+      width: 100%;
+      padding-bottom: 2%;
+      padding-left: 4%;
+    }
+    .walk-img {
+      width: 100%;
+      padding-bottom: 7%;
+    }
+ }
+ .btn {
+  
+   .button-mixin-mobile();
+ }
+}
+}
+
